@@ -31,7 +31,7 @@ if __name__ == "__main__":
     my_fruits = Fruits()
     
     # Adding fruits to the collection
-    my_fruits.append("Apple")
+    my_fruits.append("papaya")
     my_fruits.append("Banana")
     my_fruits.append("Orange")
     my_fruits.append("Mango")
