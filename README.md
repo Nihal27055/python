@@ -1,64 +1,57 @@
-# Fruits Collection
+# Flappy Bird Game
 
-A simple Python library for managing and displaying a collection of fruits with colorful output.
+A browser-based implementation of the classic Flappy Bird game using HTML, CSS, and JavaScript.
 
 ## Features
 
-- Add fruits to your collection
-- Remove fruits from your collection
-- Clear your entire collection
-- Display fruits with random colorful text
+- High-level graphics with canvas rendering
+- Responsive controls (keyboard, mouse, touch)
+- Game state management (start screen, gameplay, game over screen)
+- Score tracking
+- Collision detection
+- Animated bird and pipe obstacles
 
-## Requirements
+## How to Play
 
-- Python 3.x
-- colorama
+1. Open `flappy_bird.html` in a web browser
+2. Click the "Start Game" button or press the Space bar / Up arrow key
+3. Control the bird:
+   - Click the screen
+   - Press the Space bar
+   - Press the Up arrow key
+4. Navigate through the pipes without hitting them
+5. Each pipe you pass earns you 1 point
+6. Try to achieve the highest score possible
 
-## Installation
+## Game Controls
 
-Install the required dependencies:
+- **Space / Up Arrow / Click**: Make the bird flap its wings and go up
+- **Start Button**: Begin the game
+- **Play Again Button**: Restart the game after Game Over
 
-```bash
-pip install colorama
-```
+## Files
 
-## Usage
+- `flappy_bird.html`: The main HTML file containing the game structure and styling
+- `flappy_bird.js`: JavaScript file with game logic and mechanics
 
-```python
-from fruits import Fruits
+## Game Mechanics
 
-# Create a new fruits collection
-my_fruits = Fruits()
+- The bird constantly falls due to gravity
+- Pressing the flap controls makes the bird jump upward
+- Pipes appear from the right side of the screen and move to the left
+- Colliding with pipes or the ground ends the game
+- Each successfully passed pipe pair adds 1 to your score
 
-# Add fruits to the collection
-my_fruits.append("Apple")
-my_fruits.append("Banana")
-my_fruits.append("Orange")
-my_fruits.append("Mango")
-my_fruits.append("Grapes")
-
-# Display the fruits with colorful text
-my_fruits.print_fruit_list()
-
-# Get the number of fruits
-print(f"Number of fruits: {len(my_fruits)}")
-
-# Remove the last fruit
-removed_fruit = my_fruits.pop()
-print(f"Removed fruit: {removed_fruit}")
-
-# Clear all fruits
-my_fruits.clear()
-```
-
-## Methods
-
-- `append(fruit)`: Add a fruit to the collection
-- `pop(index=-1)`: Remove and return a fruit at the given index (default is the last item)
-- `clear()`: Remove all fruits from the collection
-- `__len__()`: Get the number of fruits in the collection
-- `print_fruit_list()`: Display all fruits with random colors
+## Development
+This game was created using:
+- HTML5 Canvas for rendering
+- JavaScript for game logic
+- CSS for styling
 
 ## License
 
-MIT 
+Feel free to modify and use this code for personal and educational purposes.
+
+---
+
+Enjoy the game! 
